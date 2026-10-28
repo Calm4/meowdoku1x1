@@ -1,5 +1,5 @@
-import {Relay} from './relay.js?v=2';
-import {createRoom,roomView,act,settle} from './game.js?v=2';
+import {Relay} from './relay.js?v=3';
+import {createRoom,roomView,act,settle} from './game.js?v=3';
 const enc=new TextEncoder(),dec=new TextDecoder();
 const hex=b=>[...new Uint8Array(b)].map(n=>n.toString(16).padStart(2,'0')).join('');
 const unhex=s=>new Uint8Array(s.match(/../g).map(x=>parseInt(x,16)));
